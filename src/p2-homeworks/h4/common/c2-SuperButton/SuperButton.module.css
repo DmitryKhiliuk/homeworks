@@ -5,3 +5,8 @@
 .red {
     background: red;
 }
+
+.button:hover {
+    background-color: gold;
+}
+
