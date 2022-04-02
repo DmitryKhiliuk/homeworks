@@ -1,0 +1,12 @@
+.all {
+    background-color: cornflowerblue;
+    height: 100vh;
+    text-align: center;
+    padding-top: 40vh;
+
+}
+
+.item {
+    font-size: 30px;
+    color: darkred;
+}

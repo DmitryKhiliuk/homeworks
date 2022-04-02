@@ -1,0 +1,17 @@
+.nav {
+    background-color: black;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.item {
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.active {
+
+}
+
