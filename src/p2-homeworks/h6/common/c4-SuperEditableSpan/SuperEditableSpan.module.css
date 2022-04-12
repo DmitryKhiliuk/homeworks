@@ -1,0 +1,6 @@
+.span:before {content: '\270E'; }
+.span {
+    display: block;
+    margin: 10px;
+    color: red;
+}
