@@ -9,14 +9,15 @@ type SuperDoubleRangePropsType = {
 const SuperDoubleRange: React.FC<SuperDoubleRangePropsType> = (
     {
         onChangeRange, value,
-        // min, max, step, disable, ...
+        //min, max, step, disable, ...restProps
     }
 ) => {
-    // сделать самому, можно подключать библиотеки
+
+
 
     return (
         <>
-            DoubleRange
+
         </>
     )
 }
