@@ -8,11 +8,11 @@ import store from "./p2-homeworks/h10/bll/store";
 
 
 ReactDOM.render(
-    <React.StrictMode>
+
         <Provider store={store}>
             <App/>
         </Provider>
-    </React.StrictMode>,
+ ,
     document.getElementById("root")
 )
 
