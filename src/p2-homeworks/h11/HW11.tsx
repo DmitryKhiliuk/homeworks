@@ -9,6 +9,12 @@ function HW11() {
     const onChangeHandler = (value1: number) => {
         setValue1(value1)
     }
+
+    const doubleHandler = (value:[value1: number, value2:number]) => {
+        setValue1(value1)
+        setValue2(value2)
+
+    }
     
     return (
         <div>
@@ -26,7 +32,10 @@ function HW11() {
 
             <div>
                 <span>{value1}</span>
-                <SuperDoubleRange
+                <SuperDoubleRange callBack={doubleHandler}
+                                  value={[value1,value2]}
+
+
                     // сделать так чтоб value1 и value2 изменялось
 
                 />

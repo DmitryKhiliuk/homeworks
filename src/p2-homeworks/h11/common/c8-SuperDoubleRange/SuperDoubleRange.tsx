@@ -1,25 +1,34 @@
-import React from 'react'
+import React, {ChangeEvent} from 'react'
+import {Slider} from "@mui/material";
 
-type SuperDoubleRangePropsType = {
-    onChangeRange?: (value: [number, number]) => void
-    value?: [number, number]
-    // min, max, step, disable, ...
+type SuperDoubleRangeType = {
+    callBack: (value:[number,number]) => void
+    value: number[]
+
+
 }
 
-const SuperDoubleRange: React.FC<SuperDoubleRangePropsType> = (
-    {
-        onChangeRange, value,
-        //min, max, step, disable, ...restProps
+
+
+const SuperDoubleRange = (props:SuperDoubleRangeType) => {
+
+    const [value, setValue] = React.useState<number[]>([20, 37]);
+
+    const handleChange = (event: Event, newValue: number | number[]) => {
+        setValue(newValue as number[])
     }
-) => {
 
+    return <>
+        <Slider
+            getAriaLabel={() => 'range'}
+            value={value}
+            onChange={handleChange}
+            valueLabelDisplay="auto"
+            style={{width: '200px'}}
+            //getAriaValueText={}
+        />
 
-
-    return (
-        <>
-
-        </>
-    )
+    </>
 }
 
 export default SuperDoubleRange
