@@ -1,31 +1,27 @@
-import React, {ChangeEvent} from 'react'
+import React from 'react'
 import {Slider} from "@mui/material";
 
 type SuperDoubleRangeType = {
-    callBack: (value:[number,number]) => void
+    callBack: (value:number[]) => void
     value: number[]
 
 
 }
 
-
-
 const SuperDoubleRange = (props:SuperDoubleRangeType) => {
 
-    const [value, setValue] = React.useState<number[]>([20, 37]);
 
     const handleChange = (event: Event, newValue: number | number[]) => {
-        setValue(newValue as number[])
+        props.callBack(newValue as number[])
     }
 
     return <>
         <Slider
             getAriaLabel={() => 'range'}
-            value={value}
+            value={props.value}
             onChange={handleChange}
             valueLabelDisplay="auto"
             style={{width: '200px'}}
-            //getAriaValueText={}
         />
 
     </>
