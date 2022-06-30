@@ -1,12 +1,11 @@
 import React from 'react'
+import {HW13} from "../../h13/HW13";
 
 
 function PostJunior() {
     return (
         <div>
-
-            <h1>Тоже ничего нет</h1>
-
+            <HW13/>
         </div>
     )
 }

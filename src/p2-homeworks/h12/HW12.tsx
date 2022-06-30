@@ -23,7 +23,7 @@ function HW12() {
     return (
         <div className={s[theme.value]}>
             <hr/>
-            <span className={s[theme + '-text']}>
+            <span className={s[theme.value + '-text']}>
                 homeworks 12
             </span>
 
